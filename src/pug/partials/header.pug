@@ -1,0 +1,30 @@
+include ../variables/header_variables.pug
+
+header.header   
+    .wrapper.container-fluid
+        .header_left.header_logo
+            a(href="#")
+                img(src="assets/images/mandala-logo.png", alt="mandala-logo")
+        .header_middle.header_menu
+            nav
+                ul
+                    each item,index in header_menu
+                        if (index === 2)
+                            li= item
+                                i.far.fa-chevron-down
+                        else 
+                            li= item
+                        
+        .header_right
+            nav
+                ul
+                    li.header_top_cart
+                        a(href="#")
+                            i.fas.fa-shopping-cart
+                    li.header_top_search
+                        a(href="")
+                            i.fas.fa-search      
+                    li.icon_menu_open
+                        i.fas.fa-bars
+                    li.icon_menu_close
+                        i.fas.fa-times

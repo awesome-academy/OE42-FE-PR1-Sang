@@ -19,7 +19,7 @@ function jsTask() { return src(FilesPath.jsFiles) .pipe(concat('all.js'))
 
 function assetsTask() { return src('assets/**/*') .pipe(dest('dist/assets')) }
 
-function serve() { browserSync.init({ server: { baseDir: 'D:/Sun-Training/Project1/OE42-FE-PR1-Sang' } }) 
+function serve() { browserSync.init({ server: { baseDir: './dist' } }) 
     watch(FilesPath.sassFiles, sassTask); 
     watch(FilesPath.htmlFiles, htmlTask); 
     watch(FilesPath.jsFiles, jsTask); 
@@ -28,6 +28,6 @@ function serve() { browserSync.init({ server: { baseDir: 'D:/Sun-Training/Projec
 exports.sass = sassTask; 
 exports.html = htmlTask; 
 exports.js = jsTask;
-exports.assets = assetsTask; 
+exports.assets = assetsTask;
 exports.default = series(parallel(htmlTask, sassTask, jsTask, assetsTask));
 exports.serve = series(serve, parallel(htmlTask, sassTask, jsTask, assetsTask));
