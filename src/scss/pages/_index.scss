@@ -1,0 +1,63 @@
+.main{
+    .content_banner{
+        background-image: url('../assets/images/content_banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+        position: relative;
+    }
+}
+
+.content_banner{
+    .wrapper{
+        max-width: 1200px;
+        margin: auto;
+    }
+        .content_banner_left{
+            padding-left: 0;
+            position: absolute;
+            top: 63%;
+            left: 4%;
+            .banner_title{
+                margin-bottom: 0;
+                margin: auto;
+                width: fit-content;
+                img{
+                    margin: 0;
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                }
+            }
+            .banner_caption{
+                width: fit-content;
+                margin: auto;
+                font-size: 1em;
+                color: $dark-red;
+                text-align: center;
+            }
+            .banner_price{
+                color:$green;
+                font-size: 2em;
+                width: fit-content;
+                margin: auto;
+                text-align: center;
+            }
+            .banner_orderNow{
+                width: fit-content;
+                margin: auto;
+                color: $black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .9rem;
+                text-align: center;
+            }
+            .banner_orderNow:hover{
+                color: $green;
+            }
+        }   
+}

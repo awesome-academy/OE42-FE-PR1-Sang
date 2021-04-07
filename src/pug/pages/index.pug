@@ -1,7 +1,14 @@
 extends ../layouts/layout_home.pug
 block content
-    .container
-        .section.content_banner
+        section.content_banner.container-fluid
+            .wrapper.row
+                .col-6.col-sm-6.content_banner_left
+                    h2.banner_title
+                        img(src="./assets/images/hero-title.png", alt="Green Vera" class = 'img-fluid')
+                    p.banner_caption Sản phẩm tinh dầu dưỡng da mới nhất của Mandala
+                    p.banner_price GIÁ CHỈ 750.000<sup>đ</sub>
+                    a.banner_orderNow(href="#") MUA HÀNG
+                .col-6.col-sm-6
         .policy
             .wrapper
         section.showcase
