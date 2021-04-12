@@ -1,0 +1,51 @@
+@media screen and (max-width: 900px){
+    .header{
+        .header_logo img{
+            width: 80%;
+        }
+    }
+    .header_menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        transition: all .4s ease;
+        ul{
+            display: block;
+        }
+    }
+
+    .header_right{
+        .icon_menu_open{
+            display: block;
+        }
+    }
+    .header_right{
+        .icon_cart_sort_up{
+            font-size: 2rem;
+        }
+        .mega_menu_cart{
+            left: 55%;
+        }
+    }
+
+    #r1:checked ~ .header_menu{
+        right: 0;
+        transition: all .4s ease;
+    }
+
+    #r1:checked ~ .header_right{
+        .icon_menu_open{
+            display: none;
+        }
+    }
+    
+    #r1:checked ~ .header_right{
+        .icon_menu_close{
+            display: block;
+        }
+    }
+
+    #r2:checked ~ .header_menu{
+        right: -100%;
+    }
+}
