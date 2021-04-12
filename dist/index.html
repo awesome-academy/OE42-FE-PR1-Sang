@@ -13,25 +13,96 @@
       <div class="overlay"></div>
       <div class="wrapper container-fluid">
         <div class="header_left header_logo"><a href="#"><img src="assets/images/mandala-logo.png" alt="mandala-logo"></a></div>
+        <input type="radio" name="r" id="r1">
+        <input type="radio" name="r" id="r2">
         <div class="header_middle header_menu">
           <nav>
             <ul>
-              <li>TRANG CHỦ</li>
-              <li>GIỚI THIỆU</li>
-              <li>SẢN PHẨM<i class="far fa-chevron-down"></i></li>
-              <li>TIN TỨC</li>
-              <li>BẢN ĐỒ</li>
-              <li>LIÊN HỆ</li>
+              <li><a href="#">TRANG CHỦ</a></li>
+              <li><a href="#">GIỚI THIỆU</a></li>
+              <li><a href="#">SẢN PHẨM</a><i class="far fa-chevron-down"> </i><i class="fas fa-sort-up icon_sort_up"></i>
+                <div class="mega_menu_product">
+                  <nav>
+                    <ul>
+                      <p class="mega_menu_product_category">DƯỠNG DA</p>
+                      <li><a href="#">Áo khoác</a></li>
+                      <li><a href="#">Bộ áo liền quần</a></li>
+                      <li><a href="#">Dresses</a></li>
+                      <li><a href="#">Quần / Váy</a></li>
+                      <li><a href="#">Quần short</a></li>
+                      <li><a href="#">Quần jean</a></li>
+                      <li><a href="#">Đồ đan</a></li>
+                      <li><a href="#">Áo nỉ</a></li>
+                    </ul>
+                    <ul>
+                      <p class="mega_menu_product_category">NƯỚC HOA</p>
+                      <li><a href="#">Áo cánh / Áo sơ mi</a></li>
+                      <li><a href="#">Túi xách và Balo</a></li>
+                      <li><a href="#">Khăn quàng cổ và Foulards</a></li>
+                      <li><a href="#">Dệt kim Hats và Gloves</a></li>
+                      <li><a href="#">Vớ và Socks</a></li>
+                      <li><a href="#">Jewerly</a></li>
+                      <li><a href="#">Bị bảo vệ</a></li>
+                      <li><a href="#">Giày</a></li>
+                    </ul>
+                    <ul>
+                      <p class="mega_menu_product_category">TRANG SỨC</p>
+                      <li><a href="#">Áo cánh / Áo sơ mi</a></li>
+                      <li><a href="#">Túi xách và Balo</a></li>
+                      <li><a href="#">Khăn quàng cổ và Foulards</a></li>
+                      <li><a href="#">Dệt kim Hats và Gloves</a></li>
+                      <li><a href="#">Vớ và Socks</a></li>
+                      <li><a href="#">Jewerly</a></li>
+                      <li><a href="#">Nước hoa</a></li>
+                      <li><a href="#">Giày</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </li>
+              <li><a href="#">TIN TỨC</a></li>
+              <li><a href="#">BẢN ĐỒ</a></li>
+              <li><a href="#">LIÊN HỆ</a></li>
             </ul>
           </nav>
         </div>
         <div class="header_right">
           <nav>
-            <ul>
-              <li class="header_top_cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <ul class="cart_list">
+              <li class="header_top_cart"><i class="fas fa-sort-up icon_cart_sort_up"></i><a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="mega_menu_cart">
+                  <nav class="menu_cart">
+                    <ul class="cart_list">
+                      <li class="cart_item">
+                        <div class="cart_client_avatar"><img src="./assets/images/client_ava.jpg" alt="product avatar"></div>
+                        <div class="cart_item_info">
+                          <p class="cart_product_name">Áo sơ mi Nam</p>
+                          <p class="cart_product_price">120.000<sup>đ</sup></p>
+                        </div>
+                        <div class="cart_icon_delete"><i class="fas fa-times icon_delete"></i></div>
+                      </li>
+                      <li class="cart_item">
+                        <div class="cart_client_avatar"><img src="./assets/images/client_ava.jpg" alt="product avatar"></div>
+                        <div class="cart_item_info">
+                          <p class="cart_product_name">Áo sơ mi Nam</p>
+                          <p class="cart_product_price">120.000<sup>đ</sup></p>
+                        </div>
+                        <div class="cart_icon_delete"><i class="fas fa-times icon_delete"></i></div>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="cart_total">
+                    <p class="cart_total_title">Tổng số</p>
+                    <p class="cart_total_price">240.000<sup>đ</sup></p>
+                  </div><a class="cart_btn" href="#">GIỎ HÀNG</a>
+                </div>
+              </li>
               <li class="header_top_search"><a href=""><i class="fas fa-search">     </i></a></li>
-              <li class="icon_menu_open"><i class="fas fa-bars"></i></li>
-              <li class="icon_menu_close"><i class="fas fa-times"></i></li>
+              <li class="icon_menu_open">
+                <label class="fas fa-bars" for="r1"></label>
+              </li>
+              <li class="icon_menu_close">
+                <label class="fas fa-times" for="r2"></label>
+              </li>
             </ul>
           </nav>
         </div>

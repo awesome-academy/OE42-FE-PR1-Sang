@@ -45,13 +45,27 @@
             font-size: .8rem;
             padding: 0 .8rem;
         }
-        li:Hover{
-            color: $green;
-            cursor: pointer;
-        }
+            a{
+                text-decoration: none;
+                color: $black;
+            }
+            a:Hover{
+                color: $green;
+            }
             i{
                 padding-left: .3rem;
             }
+        li:hover>.mega_menu_product{
+            visibility: visible;
+            opacity: 1;
+            transition: all .4s ease;
+        }
+
+        li:hover>.icon_sort_up{
+            visibility: visible;
+            opacity: 1;
+            transition: all 1.2s ease;
+        }
 }
 
 .header_right{
@@ -77,4 +91,151 @@ li.icon_menu_open, li.icon_menu_close{
     background-color: $black;
     padding: 0 .3rem;
     display: none;
+}
+
+.icon_sort_up{
+    font-size: 4rem;
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    color: $green;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mega_menu_product{
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    border: 2px solid $green;
+    background-color: $white;
+    padding:.5rem 2rem 1.5rem;
+    width: 55%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+    nav{
+        display: flex;
+        ul{
+            display: flex;
+            flex-direction: column;
+            width: 33.33%;
+            margin: 0 1rem;
+            p{
+                color: $black;
+                font-size: .9rem;
+                padding: 1rem 0;
+                font-weight: 700;
+                border-bottom: 1px solid $header-line;
+                width: fit-content;
+                padding-right: 4rem;
+            }
+            li{
+                color: $grey;
+                font-weight: 500;
+                margin: 0;
+                padding: .5rem 0 0;
+            }
+
+            li:hover{
+                list-style: disc;
+                margin-left: 1rem;
+                color: $green;
+            }
+        }
+    }
+}
+
+.mega_menu_cart{
+    position: absolute;
+    top: 100%;
+    left: 74%;
+    border: 2px solid $green;
+    background-color: $white;
+    padding:1rem ;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease;
+    width: fit-content;
+    .menu_cart{
+        border-bottom:1px solid  $header-line;
+        .cart_list{
+            display: block;
+            .cart_item{
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    .cart_total{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+            .cart_total_title{
+                font-size: .8rem;
+                margin: 0;
+            }
+            .cart_total_price{
+                font-size: .8rem;
+                color: $green;
+                font-style: italic;
+                margin: 0;
+                font-weight: 700;
+            }
+    }
+
+    .cart_btn{
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+        padding: .3rem;
+    }
+}
+
+.cart_item{
+    .cart_item_info{
+        padding: 0 1rem;
+        .cart_product_name{
+            margin: 0;
+            font-size: .8rem;
+        }
+        .cart_product_price{
+            margin: 0;
+            color: $green;
+            font-style: italic;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+    }
+    .cart_icon_delete{
+         font-size: .8rem;
+         cursor: pointer;
+    }
+}
+
+.icon_cart_sort_up{
+    font-size: 4rem;
+    position: absolute;
+    top: 80%;
+    color: $green;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header_top_cart:hover>.mega_menu_cart{
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.header_top_cart:hover>.icon_cart_sort_up{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1.2s ease;
+}
+input[name = "r"]{
+    visibility: hidden;
+    opacity: 0;
 }
