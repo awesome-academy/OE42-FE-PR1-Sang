@@ -49,3 +49,13 @@
         right: -100%;
     }
 }
+
+@media screen and (max-width: 500px){
+    .header{
+        .header_right{
+            .mega_menu_cart{
+                left: 40%;
+            }
+        }
+    }
+}
