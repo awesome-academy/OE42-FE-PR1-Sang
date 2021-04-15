@@ -1,0 +1,8 @@
+mixin showcase_item_product(src)
+    img(src= src, alt="showcase image")
+mixin showcase_item_color( classFas, classDirection, src, content)
+    .color_item
+    i.fas(class=classFas)(class=classDirection)
+    .showcase_item_content
+        h4= content
+        img(src= src, alt= content)
