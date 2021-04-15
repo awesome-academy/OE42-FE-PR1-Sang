@@ -1,7 +1,10 @@
 @media screen and (max-width: 900px){
     .header{
-        .header_logo img{
-            width: 80%;
+        .header_logo{
+            margin: auto !important;
+            img{
+                width: 80%;
+            }
         }
     }
     .header_menu{
