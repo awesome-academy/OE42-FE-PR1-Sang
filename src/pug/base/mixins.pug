@@ -30,3 +30,24 @@ mixin social_content(icon, title)
 mixin main_bottom_title(title, line, alt)
     h4.title= title
     img(src= line, alt= alt).line
+
+mixin listPath(list)
+    ul
+        each item in list   
+            li(class= item.className)
+                a(href="#")= item.located
+                i.fal.fa-angle-right(class= item.classIcon)
+
+mixin table(img, num, total)
+    tr
+        td
+            img(src= img, alt="Product image")
+        td Lắc tay D&amp;G
+        td 345.000
+            sup đ
+        td
+            p= num
+        td= total
+            sup đ
+        td
+            i.fas.fa-trash-alt
