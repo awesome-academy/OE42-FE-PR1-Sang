@@ -62,14 +62,63 @@ block content
                             +showcase_item_product("./assets/images/img11.jpg")
         section.testimonial
             .wrapper
+                .testimonial_banner
+                    img(src="./assets/images/testimormial_bg.jpg", alt="testimonial_banner")
+                .testimonial_content.row
+                    .col-lg-8
+                        .carousel.slide#carouselExampleIndicators(data-bs-ride="carousel")
+                            .carousel-indicators.testimonial_indicators
+                                each item, index in testimonial_variables
+                                    if(index === 0)
+                                        button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to=item.index).active
+                                    else 
+                                        button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to=item.index)
+                            .carousel-inner
+                                each item, index in testimonial_variables
+                                    if (index === 0)
+                                        .carousel-item.active
+                                            +testominial_content_item(item.avatar, item.content, item.name, item.position)
+                                    else    
+                                        .carousel-item
+                                            +testominial_content_item(item.avatar, item.content, item.name, item.position)
+                    .col-lg-4
         section.slide_category
             .wrapper
-        .social_media   
-            .wrapper  
-        section.main_bottom
+        section.social_media   
             .wrapper
-                .main_bottom_about
-                .main_bottom_blog
-                .main_bottom_mixture    
-                    .main_bottom_contact
-                    .main_bottom_tag_product
+                nav.social_content
+                    each item in media_variables
+                        +social_content(item.icon, item.title)               
+        section.main_bottom
+            .wrapper.container-fluid
+                .main_bottom_content.row
+                    .main_bottom_about.col-12.col-sm-12.col-md-6.col-lg-4
+                        +main_bottom_title(about_us.title, about_us.line, about_us.alt)
+                        br
+                        img(src= about_us.logo, alt= about_us.alt)
+                        p.caption= about_us.caption
+                        p.about_content= about_us.content
+                        a(href="#").about_readmore= about_us.readmore
+                    .main_bottom_blog.col-12.col-sm-12.col-md-6.col-lg-4
+                        +main_bottom_title(blog.title, blog.line, blog.alt)
+                        img(src= blog.banner, alt= blog.alt).blog_banner
+                        p.caption= blog.caption
+                        p.blog_content= blog.content
+                        p.blog_author= blog.author
+                        .blog_box
+                            a(href="#").blog_readmore= blog.readmore
+                                i.fas.fa-chevron-right
+                            p.blog_comment= blog.comment
+                    .main_bottom_mixture.col-12.col-sm-12.col-md-12.col-lg-4   
+                        .main_bottom_contact
+                            +main_bottom_title(email.title, email.line, email.alt)
+                            form(action="").contact_form
+                                input(type="email" placeholder = "Email của bạn" checked)
+                                p Gửi email để nhận được những ưu đãi mới nhất
+                                button(type="submit") Gửi
+                        .main_bottom_tag_product
+                            +main_bottom_title(tag_product.title, tag_product.line, tag_product.alt)
+                            -const products = tag_product.product
+                            .list_product
+                                each product in products
+                                    a(href="#")= product

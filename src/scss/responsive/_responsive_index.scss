@@ -1,3 +1,38 @@
+@media screen and (max-width: 1100px){
+    .social_item:nth-child(9){
+        display: none;
+    }
+
+    .social_item:nth-child(11){
+        display: none;
+    }
+
+    .social_separation:nth-child(8){
+        display: none;
+    }
+
+    .social_separation:nth-child(10){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .main_bottom{
+        .main_bottom_mixture{
+            display: flex;
+            margin-top: 2rem;
+            .main_bottom_contact{
+                width: 50%;
+                padding-right: .4rem;
+            }
+            .main_bottom_tag_product{
+                width: 50%;
+                padding-left: .4rem;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 800px){
     .showcase{
         .showcase_item_content{
@@ -22,7 +57,56 @@
             }
         }
     }
+
+    .testimonial{
+        .wrapper{
+            height: 40vh;
+            margin-top: 5rem;
+            .testimonial_banner{
+                bottom: 5%;
+            }
+
+            .testimonial_content{
+                top: -5%;
+            }
+        }
+    }
+
+    .main_bottom{
+        .main_bottom_mixture{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            .main_bottom_contact{
+                width: 100%;
+                padding-right: .5rem;
+            }
+            .main_bottom_tag_product{
+                width: 100%;
+                padding-left: .5rem;
+            }
+        }
+    }
 }
+
+@media screen and (max-width: 700px){
+    .social_item:nth-child(5){
+        display: none;
+    }
+
+    .social_item:nth-child(7){
+        display: none;
+    }
+
+    .social_separation:nth-child(4){
+        display: none;
+    }
+
+    .social_separation:nth-child(6){
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px){
     .policy{
         .wrapper{
@@ -52,6 +136,26 @@
                 border: 1px solid $header-line;
                 border-left: none;
                 border-right: none;
+            }
+        }
+    }
+
+    .testimonial{
+        .testimonial_banner{
+            opacity: .4;
+            z-index: -1;
+        }
+
+        .testimonial_content{
+            top: -8%;
+            .testimonial_content_item{
+                position: relative;
+                .item_right{
+                    font-size: .8rem;
+                    .item_right_regency{
+                        font-size: .6rem;
+                    }
+                }
             }
         }
     }
