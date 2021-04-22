@@ -38,7 +38,7 @@ mixin listPath(list)
                 a(href="#")= item.located
                 i.fal.fa-angle-right(class= item.classIcon)
 
-mixin table(img, num, total)
+mixin tableCart(img, num, total)
     tr
         td
             img(src= img, alt="Product image")
@@ -51,3 +51,24 @@ mixin table(img, num, total)
             sup đ
         td
             i.fas.fa-trash-alt
+
+mixin tableAccount(status, debt)
+    tr  
+        td 
+            p #1006
+        td 
+            p May 13, 2013
+        td
+            p.red= status
+        td
+            p 350.000
+                sup đ
+        td
+            p= debt
+                sup đ
+
+mixin accountDetail(icon, content1, content2)
+    i.fas(class= icon)
+    .Detail__content
+        h5= content1
+        p= content2
