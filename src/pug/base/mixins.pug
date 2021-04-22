@@ -72,3 +72,9 @@ mixin accountDetail(icon, content1, content2)
     .Detail__content
         h5= content1
         p= content2
+
+mixin formGroup(label, type, name, idInput)
+    .form-group
+        label= label 
+        br
+        input(type= type, name= name, id= idInput)
