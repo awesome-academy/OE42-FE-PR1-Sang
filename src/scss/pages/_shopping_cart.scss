@@ -5,36 +5,7 @@
         margin: auto;
         padding: 0 .5rem;
         .path{
-            padding: 1rem 0;
-            border-bottom: .5px solid $header-line;
-            margin-bottom: 1rem;
-            ul{
-                display: flex;
-                margin: 0;
-                padding: 0;
-            }
-                li{
-                    list-style: none;
-                    font-size: .9rem;
-                    color: black;
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-
-                    i{
-                        margin: 0 .5rem;
-                    }
-                }
-
-                li:last-child{
-                    a{
-                        color: green;
-                    }
-                    i{
-                        display: none;
-                    }
-                }
+            @include pathSection($green);
         }
 
         .cart{
@@ -50,7 +21,6 @@
                     width: 100%;
                     thead{
                         background-color: $thead-bg;
-                        border: 1px solid $black;
                         td{
                             border: 1px solid $header-line;
                             font-size: .9rem;
