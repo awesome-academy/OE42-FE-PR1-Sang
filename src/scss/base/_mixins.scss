@@ -71,3 +71,11 @@
                     }
                 }
 }
+
+@mixin input{
+    width: 85%;
+    border: 1px solid $header-line;
+    outline: none;
+    padding: .3rem;
+    font-size: .9rem;
+}

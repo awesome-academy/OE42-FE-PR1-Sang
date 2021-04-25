@@ -14,7 +14,7 @@ header.header
                     each item,index in header_menu
                         if (index === 2)
                             li
-                                a(href="#")= item
+                                a(href=item.href)= item.title
                                 i.far.fa-chevron-down 
                                 i.fas.fa-sort-up.icon_sort_up
                                 .mega_menu_product
@@ -28,7 +28,7 @@ header.header
                                                             a(href="#")= item
                         else 
                             li
-                                a(href="#")= item
+                                a(href=item.href)= item.title
                         
         .header_right
             nav
