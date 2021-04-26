@@ -1109,6 +1109,72 @@ input[name="r"] {
             opacity: 0;
             visibility: hidden; }
 
+.contactUs {
+  margin-top: 11vh;
+  margin-bottom: 3rem; }
+  .contactUs .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 .5rem; }
+    .contactUs .wrapper .path {
+      padding: 1rem 0;
+      border-bottom: 0.5px solid #b3b3b3;
+      margin-bottom: 1rem;
+      margin-bottom: 0; }
+      .contactUs .wrapper .path ul {
+        display: flex;
+        margin: 0;
+        padding: 0; }
+      .contactUs .wrapper .path li {
+        list-style: none;
+        font-size: .9rem;
+        color: black; }
+        .contactUs .wrapper .path li a {
+          text-decoration: none;
+          color: black; }
+        .contactUs .wrapper .path li i {
+          margin: 0 .5rem; }
+      .contactUs .wrapper .path li:last-child a {
+        color: #789629; }
+      .contactUs .wrapper .path li:last-child i {
+        display: none; }
+    .contactUs .wrapper .contact .contact__title h1 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      font-weight: bold; }
+    .contactUs .wrapper .contact .contact__content {
+      width: 100%;
+      margin: 0; }
+      .contactUs .wrapper .contact .contact__content .contact__content__map {
+        margin-top: 2rem; }
+      .contactUs .wrapper .contact .contact__content .contact__content__form {
+        margin-top: 2rem; }
+        .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__title h3 {
+          font-size: 1.2rem;
+          font-weight: bold; }
+        .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__group .form-group {
+          display: flex;
+          justify-content: space-between;
+          margin: 1rem 0; }
+          .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__group .form-group label {
+            font-size: .9rem;
+            font-weight: bold; }
+          .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__group .form-group input, .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__group .form-group textarea {
+            width: 85%;
+            border: 1px solid #b3b3b3;
+            outline: none;
+            padding: .3rem;
+            font-size: .9rem; }
+        .contactUs .wrapper .contact .contact__content .contact__content__form .contact__content__form__btn button {
+          background-color: black;
+          color: white;
+          outline: none;
+          border: 1px solid black;
+          padding: .3rem 1rem;
+          font-size: .9rem;
+          margin-top: .7rem;
+          float: right; }
+
 .footer {
   background-color: black; }
   .footer .footer_top .wrapper_top {
@@ -1363,4 +1429,16 @@ input[name="r"] {
 
 @media screen and (max-width: 550px) {
   td {
+    font-size: .7rem !important; } }
+
+@media screen and (max-width: 1000px) {
+  .contactUs img {
+    width: 100% !important; } }
+
+@media screen and (max-width: 600px) {
+  .contactUs h1 {
+    font-size: 1.2rem !important; }
+  .contactUs h3 {
+    font-size: 1rem !important; }
+  .contactUs label {
     font-size: .7rem !important; } }
