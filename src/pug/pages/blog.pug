@@ -1,7 +1,7 @@
-extends ../layouts/layout_aboutUs
+extends ../layouts/layout_blog
 
 block main
-    main
+    main.blog
         include ../variables/blog_variables.pug
         include ../base/mixins.pug
         .wrapper
@@ -9,7 +9,7 @@ block main
                 .path__content
                 +listPath(PathBlog) 
             section
-                .blog
+                .blog__box
                     .blog__title
                         h1 BLOG
                     .blog__content

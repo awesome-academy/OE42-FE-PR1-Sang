@@ -1175,103 +1175,271 @@ input[name="r"] {
           margin-top: .7rem;
           float: right; }
 
-main {
+.blog {
   margin-top: 11vh;
   margin-bottom: 3rem; }
-  main .wrapper {
+  .blog .wrapper {
     max-width: 1200px;
     margin: auto;
     padding: 0 .5rem; }
-    main .wrapper .path {
+    .blog .wrapper .path {
       padding: 1rem 0;
       border-bottom: 0.5px solid #b3b3b3;
       margin-bottom: 1rem;
       margin-bottom: 0; }
-      main .wrapper .path ul {
+      .blog .wrapper .path ul {
         display: flex;
         margin: 0;
         padding: 0; }
-      main .wrapper .path li {
+      .blog .wrapper .path li {
         list-style: none;
         font-size: .9rem;
         color: black; }
-        main .wrapper .path li a {
+        .blog .wrapper .path li a {
           text-decoration: none;
           color: black; }
-        main .wrapper .path li i {
+        .blog .wrapper .path li i {
           margin: 0 .5rem; }
-      main .wrapper .path li:last-child a {
+      .blog .wrapper .path li:last-child a {
         color: #789629; }
-      main .wrapper .path li:last-child i {
+      .blog .wrapper .path li:last-child i {
         display: none; }
-    main .wrapper .blog .blog__title h1 {
+    .blog .wrapper .blog__box .blog__title h1 {
       font-size: 1.5rem;
       margin: 2rem 0;
       font-weight: bold; }
-    main .wrapper .blog .blog__content {
+    .blog .wrapper .blog__box .blog__content {
       max-width: 1200px;
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      main .wrapper .blog .blog__content .blog__conntent__pagination {
+      .blog .wrapper .blog__box .blog__content .blog__conntent__pagination {
         width: 100%;
         padding: 0 .75rem .5rem .75rem;
         border-bottom: 1px solid #b3b3b3; }
-        main .wrapper .blog .blog__content .blog__conntent__pagination .pagination {
+        .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination {
           display: flex;
           justify-content: space-between; }
-          main .wrapper .blog .blog__content .blog__conntent__pagination .pagination .pagination__option {
+          .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination .pagination__option {
             display: flex; }
-            main .wrapper .blog .blog__content .blog__conntent__pagination .pagination .pagination__option .pagination__option__grid {
+            .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination .pagination__option .pagination__option__grid {
               font-size: .9rem;
               margin-right: .5rem; }
-            main .wrapper .blog .blog__content .blog__conntent__pagination .pagination .pagination__option .pagination__option__list {
+            .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination .pagination__option .pagination__option__list {
               font-size: .9rem; }
-          main .wrapper .blog .blog__content .blog__conntent__pagination .pagination .pagination__num span {
+          .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination .pagination__num span {
             margin: 0 .6rem;
             font-size: .9rem;
             color: #737373;
             cursor: pointer; }
-          main .wrapper .blog .blog__content .blog__conntent__pagination .pagination .pagination__num .active {
+          .blog .wrapper .blog__box .blog__content .blog__conntent__pagination .pagination .pagination__num .active {
             color: black;
             font-weight: bold; }
-      main .wrapper .blog .blog__content .blog__conntent__pagination:last-child {
+      .blog .wrapper .blog__box .blog__content .blog__conntent__pagination:last-child {
         margin-top: 2rem; }
-      main .wrapper .blog .blog__content .blog__content__post {
+      .blog .wrapper .blog__box .blog__content .blog__content__post {
         width: 100%;
         margin: 0; }
-        main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item {
+        .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item {
           margin-top: 1.5rem; }
-          main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item a {
+          .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item a {
             text-decoration: none;
             color: black; }
-            main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item a h5 {
+            .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item a h5 {
               font-size: .8rem;
               font-weight: bold;
               padding: 1rem 0;
               border-bottom: 1px solid #b3b3b3; }
-          main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item p {
+          .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item p {
             text-align: justify;
             font-size: .8rem;
             margin: 0; }
-          main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item span {
+          .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item span {
             font-style: italic;
             color: #737373;
             font-size: .8rem; }
-          main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item .post__item__btn {
+          .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item .post__item__btn {
             display: flex;
             justify-content: space-between;
             padding-top: .5rem;
             border-top: 1px solid #b3b3b3;
             margin-top: .5rem; }
-            main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item .post__item__btn a {
+            .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item .post__item__btn a {
               text-decoration: none;
               font-size: .8rem;
               color: #737373; }
-              main .wrapper .blog .blog__content .blog__content__post .blog__content__post__item .post__item__btn a i {
+              .blog .wrapper .blog__box .blog__content .blog__content__post .blog__content__post__item .post__item__btn a i {
                 margin-left: .4rem; }
+
+.main_blog-detail {
+  margin-top: 11vh;
+  margin-bottom: 3rem; }
+  .main_blog-detail .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 .5rem; }
+    .main_blog-detail .wrapper .path {
+      padding: 1rem 0;
+      border-bottom: 0.5px solid #b3b3b3;
+      margin-bottom: 1rem;
+      margin-bottom: 0; }
+      .main_blog-detail .wrapper .path ul {
+        display: flex;
+        margin: 0;
+        padding: 0; }
+      .main_blog-detail .wrapper .path li {
+        list-style: none;
+        font-size: .9rem;
+        color: black; }
+        .main_blog-detail .wrapper .path li a {
+          text-decoration: none;
+          color: black; }
+        .main_blog-detail .wrapper .path li i {
+          margin: 0 .5rem; }
+      .main_blog-detail .wrapper .path li:last-child a {
+        color: #789629; }
+      .main_blog-detail .wrapper .path li:last-child i {
+        display: none; }
+    .main_blog-detail .wrapper .blog-detail .blog-detail__title.title-content h1 {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+      font-weight: bold; }
+    .main_blog-detail .wrapper .blog-detail .blog-detail__content {
+      width: 100%;
+      margin: 0; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #b3b3b3; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post {
+        display: flex;
+        flex-direction: column; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post .blog-detail__aside__post__item {
+          display: flex;
+          align-items: center;
+          margin-top: 1.5rem; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post .blog-detail__aside__post__item img {
+            margin-right: 1rem;
+            height: 80%; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post .blog-detail__aside__post__item h4 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post .blog-detail__aside__post__item small {
+            font-weight: bold;
+            font-size: .9rem; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__post .blog-detail__aside__post__item p {
+            font-size: .9rem;
+            color: #737373;
+            font-style: italic;
+            margin: 0; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__tag {
+        margin-top: 3rem; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__tag .blog-detail__aside__tag__btn {
+          margin: 2rem 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__tag button {
+          outline: none;
+          background-color: white;
+          color: black;
+          border: 1px solid #789629;
+          padding: .2rem .5rem;
+          margin-right: .5rem;
+          margin-bottom: .5rem; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__tag button:hover {
+          background-color: #789629;
+          color: white; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__video .blog-detail__aside__video__img {
+        background-image: url("../assets/images/blog-detail/video.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 30vh;
+        position: relative; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__video .blog-detail__aside__video__img .video__img__overlay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: black;
+          opacity: .5;
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          cursor: pointer; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__aside .blog-detail__aside__video .blog-detail__aside__video__img .video__img__overlay .video__img__overlay__icon {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 2rem 0 1rem 0;
+        border-bottom: 1px solid #b3b3b3; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #b3b3b3; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post p {
+          font-size: .9rem;
+          text-align: justify;
+          margin: 1rem 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post span {
+          font-size: .9rem;
+          font-style: italic;
+          color: #737373; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post__btn {
+        padding: 1rem 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post__btn a {
+          text-decoration: none;
+          font-size: .9rem;
+          color: #737373; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post__btn a i {
+            margin-left: .4rem; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__post__btn a:last-child {
+          float: right; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__tag {
+        display: flex;
+        font-size: .9rem;
+        align-items: baseline;
+        padding: 1rem 0;
+        border-bottom: 1px solid #b3b3b3; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__tag h5 {
+          font-size: .9rem;
+          color: #737373;
+          margin-right: 1rem;
+          margin-bottom: 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__tag p {
+          margin: 0; }
+      .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments {
+        padding: 2rem 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments h3 {
+          font-size: 1.2rem;
+          margin: 0; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments .form-group {
+          display: flex;
+          justify-content: space-between;
+          margin: 1.5rem 0; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments .form-group label {
+            font-size: .9rem;
+            font-weight: bold; }
+          .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments .form-group input, .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments .form-group textarea {
+            width: 85%;
+            border: 1px solid #b3b3b3;
+            outline: none;
+            padding: .3rem;
+            font-size: .9rem; }
+        .main_blog-detail .wrapper .blog-detail .blog-detail__content .blog-detail__article .blog-detail__article__comments .form-btn button {
+          background-color: black;
+          color: white;
+          outline: none;
+          border: 1px solid black;
+          padding: .4rem 1rem;
+          font-size: .9rem;
+          margin-top: .7rem;
+          margin-left: 15%; }
 
 .footer {
   background-color: black; }
@@ -1540,3 +1708,49 @@ main {
     font-size: 1rem !important; }
   .contactUs label {
     font-size: .7rem !important; } }
+
+@media screen and (min-width: 1000px) {
+  .blog-detail aside {
+    padding-left: 0; }
+  .blog-detail article {
+    padding-right: 0;
+    margin-top: 1.8rem; } }
+
+@media screen and (max-width: 999px) {
+  .blog-detail aside {
+    display: none; }
+  .blog-detail article {
+    padding: 0 !important;
+    margin-top: 0 !important; } }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.3rem !important; }
+  .blog-detail article .blog-detail__article h2 {
+    font-size: 1.1rem !important; }
+  .blog-detail article .blog-detail__article .blog-detail__article__post p {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box; }
+  .blog-detail article .blog-detail__article__comments .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0; }
+    .blog-detail article .blog-detail__article__comments .form-group label {
+      font-size: .9rem;
+      font-weight: bold; }
+    .blog-detail article .blog-detail__article__comments .form-group input, .blog-detail article .blog-detail__article__comments .form-group textarea {
+      width: 85%;
+      border: 1px solid #b3b3b3;
+      outline: none;
+      padding: .3rem;
+      font-size: .9rem;
+      width: 100% !important; }
+  .blog-detail article .blog-detail__article__comments .form-btn button {
+    padding: .3rem .8rem !important;
+    font-size: .7rem !important;
+    margin-top: .5rem !important;
+    margin-left: 0 !important; } }
