@@ -81,7 +81,7 @@ mixin formGroup(label, type, name, idInput)
 mixin blog-item(img, className)
     .blog__content__post__item(class= className).col-12.col-sm-12.col-md-6.col-lg-4
         img(src=img , alt="post image").img-fluid 
-        a(href="#")
+        a(href="detail_blog.html")
             h5 REVIEW SON KEM BOURJOIR VELVET
         p Hi, chào các nàng...sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tính xô nhau đi tắm Free để giải nhiệt.
         span Bởi NamTran (27/05/2015)
@@ -103,3 +103,11 @@ mixin pagination
             span 2
             span 3
             i.fas.fa-caret-right
+
+mixin post-item(img)
+    .blog-detail__aside__post__item
+        img(src=img , alt="post image")
+        .post__item__text   
+            h4  11
+                small / Tháng 5
+            p Đăng bởi bởi Giangle
