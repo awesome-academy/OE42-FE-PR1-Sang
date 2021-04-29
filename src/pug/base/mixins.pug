@@ -111,3 +111,31 @@ mixin post-item(img)
             h4  11
                 small / Tháng 5
             p Đăng bởi bởi Giangle
+
+mixin grid-product(img, h4, old, disable)
+    .grid__content__product__item
+        img(src=img , alt="product image")
+        a(href="#").viewMore Xem chi tiết 
+        .product__item__info
+            h4= h4
+            a(href="detail_product.html")
+                p.product__name Mỹ phẩm Châu Âu
+                p.underline
+            .price_info
+                span.price 335.000
+                    sup đ
+                span.price.old(class=disable)= old
+                    sup đ
+        .product__item__icon
+            include add-to-cart
+
+mixin category_item(title, title_id, collapse, heading, list)
+    .accordion-item.category__content__list__item
+        h3(id= title_id).accordion-header
+            button.accordion-button.collapsed( data-bs-toggle='collapse' data-bs-target="#"+collapse aria-controls= collapse)= title
+        .accordion-collapse.collapse(id= collapse aria-labelledby= heading data-bs-parent='#accordionExample')
+            .accordion-body
+                nav
+                    ul
+                        each item in list
+                            li= item
