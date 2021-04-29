@@ -94,9 +94,11 @@ mixin pagination
     .pagination
         .pagination__option
             .pagination__option__grid
-                i.fas.fa-th-large
+                a(href="grid_product.html")
+                    i.fas.fa-th-large
             .pagination__option__list
-                i.fas.fa-list
+                a(href="list_product.html")
+                    i.fas.fa-list
         .pagination__num
             i.fas.fa-caret-left
             span.active 1
@@ -115,7 +117,7 @@ mixin post-item(img)
 mixin grid-product(img, h4, old, disable)
     .grid__content__product__item
         img(src=img , alt="product image")
-        a(href="#").viewMore Xem chi tiết 
+        a(href="detail_product.html").viewMore Xem chi tiết 
         .product__item__info
             h4= h4
             a(href="detail_product.html")
@@ -139,3 +141,24 @@ mixin category_item(title, title_id, collapse, heading, list)
                     ul
                         each item in list
                             li= item
+
+mixin list-product(img, title, price)
+    .list__content__product__item
+        img(src=img, alt="product image")
+        .product__item__info
+            a(href="detail_product.html")
+                h4=title
+            .product__item__info--appreciate
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 Lượt mua )
+            .product__item__info__text
+                p Tự hào được ghi là năm mà Tyffany &amp; Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+            .product__item__info__price 
+                span= price
+                    small đ
+            .product__item__info__Btn 
+                include ../base/add-to-cart
