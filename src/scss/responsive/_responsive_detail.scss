@@ -1,0 +1,21 @@
+@media screen and (max-width: 600px){
+    .detail{
+        .detail__info__content{
+            h3{
+                font-size: 1rem !important;
+            }
+            h5{
+                font-size: .8rem !important;
+            }
+            p{
+                font-size: .7rem !important;
+            }
+            h4{
+                font-size: .7rem !important;
+            }
+        }
+        .detail__info__social{
+            flex-direction: column;
+        }
+    }
+}
