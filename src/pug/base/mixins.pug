@@ -162,3 +162,31 @@ mixin list-product(img, title, price)
                     small đ
             .product__item__info__Btn 
                 include ../base/add-to-cart
+
+mixin info-content(src)
+    .info-product__content__item
+        .info-product__content__item__text
+            h5 THE MARK OF A LEGEND
+            .border-bottom
+            .item-text
+                p Tự hào được ghi là năm mà Tyffany &amp; Co là
+                p thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                p qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp 
+                p đường cong và đường nét mượt mà.
+        .info-product__content__item__img
+            img(src= src , alt="image product")
+
+mixin top-selling
+    .info-product__topSelling__item
+        img(src= "./assets/images/detail/img3.jpg", alt="top selling image")
+        .info-product__topSelling__item__content
+            p Mỹ phẩm Châu Âu
+            .item__content-appreciate
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 lượt mua )
+            .detail-price 
+                span 335.000đ
