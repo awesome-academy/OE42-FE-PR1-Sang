@@ -2078,6 +2078,59 @@ input[name="r"] {
     .main__detail-product .info-product aside .info-product__topSelling .info-product__topSelling__item:last-child {
       border: none; }
 
+.main_404 {
+  margin-top: 11vh;
+  margin-bottom: 3rem; }
+  .main_404 .wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main_404 .wrapper .notFound__content img {
+      background-image: url("../assets/images/404-page/bg-404.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: auto; }
+    .main_404 .wrapper .notFound__content__notification h2 {
+      text-align: center;
+      color: #737373;
+      font-size: 1.2rem;
+      margin: 2rem; }
+    .main_404 .wrapper .notFound__content__notification form {
+      position: relative; }
+      .main_404 .wrapper .notFound__content__notification form input {
+        width: 40%;
+        border-radius: 30px;
+        outline: none;
+        margin: auto;
+        border: 1px solid #b3b3b3;
+        padding: .4rem 1rem;
+        font-size: .9rem;
+        display: flex;
+        justify-content: center; }
+      .main_404 .wrapper .notFound__content__notification form i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 66%; }
+    .main_404 .wrapper .notFound__content__notification .notFound__content__btn {
+      width: fit-content;
+      margin: 1.5rem auto; }
+      .main_404 .wrapper .notFound__content__notification .notFound__content__btn a {
+        text-decoration: none;
+        color: #737373;
+        padding: 0 1.5rem;
+        font-size: .9rem; }
+      .main_404 .wrapper .notFound__content__notification .notFound__content__btn a:hover {
+        color: #789629; }
+      .main_404 .wrapper .notFound__content__notification .notFound__content__btn a:first-child {
+        border-right: 1px solid #b3b3b3; }
+
 .footer {
   background-color: black; }
   .footer .footer_top .wrapper_top {
