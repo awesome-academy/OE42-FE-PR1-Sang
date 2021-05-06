@@ -8,7 +8,6 @@
         position: relative;
     }
 }
-
 .content_banner{
     .wrapper{
         max-width: 1200px;
@@ -46,18 +45,19 @@
                 margin: auto;
                 text-align: center;
             }
-            .banner_orderNow{
-                width: fit-content;
-                margin: auto;
-                color: $black;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: .9rem;
-                text-align: center;
-            }
-            .banner_orderNow:hover{
-                color: $green;
+            .banner__orderNow__btn{
+                label{
+                    width: fit-content;
+                    margin: auto;
+                    color: $black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: .9rem;
+                    text-align: center;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
             }
         }   
 }
@@ -592,4 +592,35 @@
             }
         }
     } 
+}
+
+input[name = "toggle"]{
+    opacity: 0;
+    visibility: visible;
+    position: absolute;
+    top: -100%;
+}
+.newsletter-popup__overlay{
+    @import "../layouts/newsletter";
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100%;
+}
+
+#newsletter-toogle-show:checked ~ .newsletter-popup__overlay{
+    top: 30%;
+}
+
+#newsletter-toogle-show:checked ~ .box{
+    opacity: .5;
+}
+
+#newsletter-toogle-hide:checked ~ .newsletter-popup__overlay{
+    top: -100%;
+}
+
+#newsletter-toogle-hide:checked ~ .box{
+    opacity: 1;
 }
