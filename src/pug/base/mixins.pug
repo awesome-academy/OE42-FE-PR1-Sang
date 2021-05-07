@@ -117,7 +117,7 @@ mixin post-item(img)
 mixin grid-product(img, h4, old, disable)
     .grid__content__product__item
         img(src=img , alt="product image")
-        a(href="detail_product.html").viewMore Xem chi tiết 
+        a(href="detail_product.html").viewMore Xem chi tiết
         .product__item__info
             h4= h4
             a(href="detail_product.html")
@@ -190,3 +190,20 @@ mixin top-selling
                 p ( 4 lượt mua )
             .detail-price 
                 span 335.000đ
+
+mixin product-item(img, h4, old, disable)
+    .product__items__detail
+        img(src=img, alt="product image")
+        a(href="detail_product.html").viewMore Xem chi tiết
+        .product__items__detail__content
+            h4= h4
+            a(href="detail_product.html")
+                p.product__name Mỹ phẩm châu Âu
+                p.underline
+            .price_info
+                span.price 335.000
+                    sup đ
+                span.price.old(class=disable)= old
+                    sup đ
+        .product__items__detail__btn
+            include add-to-cart

@@ -395,7 +395,10 @@
     }
 }
 
+@import '../layouts/layout_product';
+
 .social_media{
+    margin-top: 1.5rem;
     padding: 3rem 0;
     .wrapper{
         @include section_center;
