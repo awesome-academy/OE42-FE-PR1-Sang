@@ -17,6 +17,23 @@
 }
 
 @media screen and (max-width: 1000px){
+    .content_banner{
+        height: 100vh !important;
+        .wrapper{
+            .content_banner_left{
+                left: 0;
+                .banner_title{
+                    font-size: 5rem;
+                }
+                .banner_caption{
+                    font-size: .8rem;
+                }
+                .banner_price{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
     .main_bottom{
         .main_bottom_mixture{
             display: flex;
@@ -71,25 +88,26 @@
             }
         }
     }
-
-    .main_bottom{
-        .main_bottom_mixture{
-            display: flex;
-            flex-direction: column;
-            margin-top: 2rem;
-            .main_bottom_contact{
-                width: 100%;
-                padding-right: .5rem;
-            }
-            .main_bottom_tag_product{
-                width: 100%;
-                padding-left: .5rem;
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 700px){
+    .content_banner{
+        height: 90vh !important;
+        .wrapper{
+            .content_banner_left{
+                left: 0;
+                .banner_title{
+                    font-size: 4rem;
+                }
+                .banner_caption{
+                    font-size: .7rem;
+                }
+                .banner_price{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
     .social_item:nth-child(5){
         display: none;
     }
@@ -155,6 +173,42 @@
                     .item_right_regency{
                         font-size: .6rem;
                     }
+                }
+            }
+        }
+    }
+    .main_bottom{
+        .main_bottom_mixture{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            .main_bottom_contact{
+                width: 100%;
+                padding-right: .5rem;
+            }
+            .main_bottom_tag_product{
+                width: 100%;
+                padding-left: .5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content_banner{
+        height: 90vh !important;
+        background-position: -15rem !important;
+        .wrapper{
+            .content_banner_left{
+                left: 9%;
+                .banne_title{
+                    font-size: 4rem;
+                }
+                .banner_caption{
+                    font-size: .7rem;
+                }
+                .banner_price{
+                    font-size: 1.2rem;
                 }
             }
         }

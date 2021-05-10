@@ -4,8 +4,7 @@ block main
         section.content_banner.container-fluid
             .wrapper.row
                 .col-6.col-sm-6.content_banner_left
-                    h2.banner_title
-                        img(src="./assets/images/hero-title.png", alt="Green Vera" class = 'img-fluid')
+                    h2.banner_title GreenVera
                     p.banner_caption Sản phẩm tinh dầu dưỡng da mới nhất của Mandala
                     p.banner_price GIÁ CHỈ 750.000<sup>đ</sub>
                     .banner__orderNow__btn
@@ -94,14 +93,14 @@ block main
         section.main_bottom
             .wrapper.container-fluid
                 .main_bottom_content.row
-                    .main_bottom_about.col-12.col-sm-12.col-md-6.col-lg-4
+                    .main_bottom_about.col-12.col-sm-6.col-md-6.col-lg-4
                         +main_bottom_title(about_us.title, about_us.line, about_us.alt)
                         br
                         img(src= about_us.logo, alt= about_us.alt)
                         p.caption= about_us.caption
                         p.about_content= about_us.content
                         a(href="#").about_readmore= about_us.readmore
-                    .main_bottom_blog.col-12.col-sm-12.col-md-6.col-lg-4
+                    .main_bottom_blog.col-12.col-sm-6.col-md-6.col-lg-4
                         +main_bottom_title(blog.title, blog.line, blog.alt)
                         img(src= blog.banner, alt= blog.alt).blog_banner
                         p.caption= blog.caption
