@@ -4,7 +4,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 110vh;
+        height: 120vh;
         position: relative;
     }
 }
@@ -19,17 +19,12 @@
             top: 63%;
             left: 4%;
             .banner_title{
+                font-family: "UTMViceroyJF";
                 margin-bottom: 0;
                 margin: auto;
                 width: fit-content;
-                img{
-                    margin: 0;
-                    width: 90%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: auto;
-                }
+                color: $green;
+                font-size: 8rem;
             }
             .banner_caption{
                 width: fit-content;
@@ -474,6 +469,7 @@
             justify-content: center;
             align-items: center;
             margin: auto;
+            width: 100%;
         }
 
         .caption{
@@ -498,7 +494,7 @@
         .main_bottom_blog{
             margin-top: 2rem;
             .blog_banner{
-                width: fit-content;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -609,7 +605,7 @@ input[name = "toggle"]{
     z-index: 20;
     left: 50%;
     transform: translateX(-50%);
-    top: -100%;
+    top: -150%;
 }
 
 #newsletter-toogle-show:checked ~ .newsletter-popup__overlay{
@@ -621,7 +617,7 @@ input[name = "toggle"]{
 }
 
 #newsletter-toogle-hide:checked ~ .newsletter-popup__overlay{
-    top: -100%;
+    top: -150%;
 }
 
 #newsletter-toogle-hide:checked ~ .box{

@@ -15,9 +15,9 @@
                                 a(href="#")= item
 
         .product__item
-            input(type="radio" name="c" id= "c1" checked )
-            input(type="radio" name="c" id= "c2")
             figure
+                input(type="radio" name="c" id= "c1" checked )
+                input(type="radio" name="c" id= "c2")
                 each item in ProductItem    
                     +product-item(item.img, item.title, item.oldPrice, item.show)
                 .product__items--arrow-right

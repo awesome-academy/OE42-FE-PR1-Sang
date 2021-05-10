@@ -9,11 +9,23 @@
     }
     .header_menu{
         position: absolute;
-        top: 100%;
+        top: 101%;
         right: -100%;
         transition: all .4s ease;
-        ul{
-            display: block;
+        background-color: $white;
+        width: 50%;
+        nav{
+            height: 100vh;
+            z-index: 20;
+            ul{
+                display: block;
+                li{
+                    border-bottom: 1px solid $header-line;
+                    height: 10vh;
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
     }
 
